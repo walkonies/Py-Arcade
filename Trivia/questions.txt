@@ -1,0 +1,4 @@
+Tkinter is a Python package-1
+Dallas is the capital of Texas-0
+Sharks can stop swimming to sleep-0
+The atomic number for Oxygen is 6-1

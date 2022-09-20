@@ -1,0 +1,38 @@
+Welcome to Alex's game of choices!
+What is your name, player? 
+Welcome,  let's test your decision skills
+This is a game of choices; you decide your fate. Every choice you make will lead you down a different path and impact your future. 
+Let's see if you can survive
+
+Here comes your first choice: Your friends decide to go jump off a bridge, will you join them? [y/n] 
+You went with your friends and jumped off a bridge into the lake and had a great time!
+Now they invite you to go get ice cream, do you go with them? [y/n] 
+You went to get ice cream with your friends! Upon walking in the front door though, you slip on an ice cream cone a child dropped a few moments before.
+You broke your neck and died on the spot.
+END
+
+Welcome,  let's test your decision skills
+This is a game of choices; you decide your fate. Every choice you make will lead you down a different path and impact your future. 
+Let's see if you can survive
+
+Here comes your first choice: Your friends decide to go jump off a bridge, will you join them? [y/n] 
+You went with your friends and jumped off a bridge into the lake and had a great time!
+Now they invite you to go get ice cream, do you go with them? [y/n] 
+You went back home to tell your mother about your cliff jumping
+Your mom gets really angry at your poor decision. She starts yelling at you, calling you names.
+Do you yell back? [y/n] 
+Your mom gets more angry at your disrespectful attitude and hits you in the head with a frying pan.
+END
+
+Welcome,  let's test your decision skills
+This is a game of choices; you decide your fate. Every choice you make will lead you down a different path and impact your future. 
+Let's see if you can survive
+
+Here comes your first choice: Your friends decide to go jump off a bridge, will you join them? [y/n] 
+You went with your friends and jumped off a bridge into the lake and had a great time!
+Now they invite you to go get ice cream, do you go with them? [y/n] 
+You went back home to tell your mother about your cliff jumping
+Your mom gets really angry at your poor decision. She starts yelling at you, calling you names.
+Do you yell back? [y/n] 
+You take the hurtful words from your mother and then go to your bedroom.
+In your room you are deciding if you want to sleep (s) or play video games (g). Which activity do you choose? [s/g] 

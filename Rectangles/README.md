@@ -1,0 +1,2 @@
+# Rectangles
+pygame demo
