@@ -553,3 +553,43 @@ colors = {
 'yellow3' : (205,205,0),
 'yellow4' : (139,139,0)
 }
+
+def main():
+
+	pg.init()
+	w_w = 600
+	w_h = 600
+	win = pg.display.set_mode((w_w,w_h))
+
+	b_w = 50
+	b_h = 14
+
+	n = len(colors)
+	n_c = w_w / b_w
+
+	pos = []
+	x=y=0
+	for i in range(n):
+		pos.append((x,y))
+		x += b_w
+		if x > w_w:
+			x = 0
+			y += b_h
+
+	boxes = [pg.Rect((p),(b_w, b_h)) for p in pos]
+
+	LETTER_FONT = pg.font.SysFont('comicsans', 12)
+	for b, c in zip(boxes, colors):
+		pg.draw.rect(win, colors[c], b)
+		text = LETTER_FONT.render(c, 1, colors['black'])
+		win.blit(text, (b[0]+2, b[1] + text.get_height() / 2))
+
+	while True:
+		for event in pg.event.get():
+			if event.type == pg.QUIT:
+				running = False
+		pg.display.update()
+
+if __name__ == '__main__':
+	import pygame as pg
+	main()
