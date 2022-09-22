@@ -557,15 +557,16 @@ colors = {
 def main():
 
 	pg.init()
-	w_w = 600
+	w_w = 800
 	w_h = 600
 	win = pg.display.set_mode((w_w,w_h))
 
-	b_w = 50
-	b_h = 14
-
 	n = len(colors)
-	n_c = w_w / b_w
+
+	b_w = 50
+	n_b_rows = w_w//b_w
+	n_rows = n/n_b_rows
+	b_h = w_h//(n_rows-1)
 
 	pos = []
 	x=y=0
@@ -584,11 +585,13 @@ def main():
 		text = LETTER_FONT.render(c, 1, colors['black'])
 		win.blit(text, (b[0]+2, b[1] + text.get_height() / 2))
 
-	while True:
+	running = True
+	while running:
 		for event in pg.event.get():
 			if event.type == pg.QUIT:
 				running = False
 		pg.display.update()
+	pg.quit()
 
 if __name__ == '__main__':
 	import pygame as pg
