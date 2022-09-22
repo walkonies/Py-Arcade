@@ -1,6 +1,10 @@
 import os, sys
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from utilities.cards import Deck
+from utilities.utilities import log, readCSV, getDate
+
+directory = os.path.join(os.getcwd(),os.path.dirname(__file__))
+log_path = os.path.join(directory,'data','pushup_log.csv')
 
 def main():
 	deck = Deck()
@@ -25,7 +29,15 @@ def main():
 			val = 15 if ace else 1
 		print(f'{str(card):<18}{val}')
 		total += val
-		input()
+		ex = input()
+		if ex == 'q':
+			break
+
 	print(f'Total: {total}!!')
+
+		       # Data, Cards, Pushpus
+	data = f'{getDate()},{num},{total}'
+	log(log_path, data)
 	
-main()
+if __name__ == '__main__':
+	main()
